@@ -1,0 +1,29 @@
+##To Setu RDP in LInux window##
+#sudo sudo
+#yum grouplist
+#yum groupinstall "Server with GUI"
+#systemctl set-default graphical.target
+#systemctl start graphical.target
+#systemctl get-default graphical.target
+#systemctl start firewalld
+#sudo firewall-cmd --zone=public --add-port=3389/tcp --permanent
+#sudo firewall-cmd --reload
+#systemctl reboot
+
+
+
+To create a new user
+
+sudo useradd -m -s /bin/bash <username>
+ sudo passwd <usernam
+ sudo usermod -aG wheel <username>
+ 
+ 
+ 
+ Step to registrer in redhat
+ 
+ first create a account in redhat linux 
+ 
+#subscription-manager register --username <Your red hat user name> --password <password> --auto-attach
+#subscription-manager refresh
+#subscription-manager attach --auto
